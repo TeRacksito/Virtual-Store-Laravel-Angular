@@ -1,5 +1,13 @@
 {
   "cSpell.words": [
-    "phpunit"
+    "appendonly",
+    "healthcheck",
+    "initdb",
+    "mysql",
+    "mysqladmin",
+    "phpunit",
+    "pingtest",
+    "redis",
+    "tokenable"
   ]
 }

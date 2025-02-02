@@ -38,7 +38,9 @@ services:
       watch:
         - action: sync
           path: ./backend
-          target: /usr/src/app
+          target: /var/www/html
+          ignore:
+            - vendor
     depends_on:
       db:
         condition: service_healthy
