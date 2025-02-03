@@ -8,6 +8,14 @@
     "phpunit",
     "pingtest",
     "redis",
+    "tailwindcss",
     "tokenable"
+  ],
+  "tailwindCSS.files.exclude": [
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/.hg/**",
+    "**/.svn/**",
+    "./backend/**"
   ]
 }
