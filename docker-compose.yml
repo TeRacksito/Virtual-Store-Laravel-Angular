@@ -41,6 +41,10 @@ services:
           target: /var/www/html
           ignore:
             - vendor
+            - .env
+        - action: sync
+          path: ./backend/.env.docker
+          target: /var/www/html/.env
     depends_on:
       db:
         condition: service_healthy
