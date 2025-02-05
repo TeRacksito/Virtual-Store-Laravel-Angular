@@ -17,7 +17,7 @@ class TagFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->word,
+            'name' => $this->faker->unique()->word,
             'tooltip' => $this->faker->optional(0.5)->text,
             'color' => $this->faker->hexColor,
             'background_color' => $this->faker->hexColor,

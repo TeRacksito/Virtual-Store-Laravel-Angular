@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -19,15 +20,9 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('users', [UserController::class, 'index'])->name('users.index');
-Route::post('users', [UserController::class, 'store'])->name('users.store');
-Route::get('users/{user}', [UserController::class, 'show'])->name('users.show');
-Route::put('users/{user}', [UserController::class, 'update'])->name('users.update');
-Route::delete('users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
+// Route::apiResource('users', UserController::class);
 
-
-
-
+Route::apiResource('products', ProductController::class);
 
 Route::get('/health', function (Request $request) {
     return "OK";

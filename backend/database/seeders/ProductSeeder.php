@@ -14,7 +14,7 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        $products = Product::factory(10)->create();
+        $products = Product::factory(100)->create();
 
         $tags = Tag::all();
 

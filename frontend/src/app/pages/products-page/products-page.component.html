@@ -1,0 +1,20 @@
+<app-full-layout>
+  <h1 class="text-2xl font-bold mb-4">Products</h1>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    @for (product of products; track product.id) {
+    <div class="bg-white p-4 rounded-lg shadow-md">
+      <img src="https://api.dicebear.com/9.x/initials/svg?seed={{ product.name }}" alt="{{ product.name }}"
+        class="w-full h-32 object-cover object-center rounded">
+      <h2 class="text-lg font-semibold">{{ product.name }}</h2>
+      <p class="text-gray-700">{{ product.description }}</p>
+      <p class="text-gray-900 font-bold mt-2">${{ product.price }}</p>
+    </div>
+    }
+  </div>
+  <div class="mt-6 flex justify-center">
+    <button (click)="previousPage()" [disabled]="!pagination.prev_page_url"
+      class="px-4 py-2 bg-gray-300 rounded mr-2">Previous</button>
+    <button (click)="nextPage()" [disabled]="!pagination.next_page_url"
+      class="px-4 py-2 bg-gray-300 rounded">Next</button>
+  </div>
+</app-full-layout>

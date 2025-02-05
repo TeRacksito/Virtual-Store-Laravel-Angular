@@ -15,7 +15,7 @@ class OrderSeeder extends Seeder
      */
     public function run(): void
     {
-        $orders = Order::factory(10)->create();
+        $orders = Order::factory(100)->create();
 
         $users = User::all();
 

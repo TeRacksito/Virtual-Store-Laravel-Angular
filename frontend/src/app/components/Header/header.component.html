@@ -1,5 +1,19 @@
 <header class="bg-gray-900 text-white py-4 px-6">
-  <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-xl font-bold">My Angular App</h1>
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div class="flex justify-between w-full md:w-auto items-center">
+      <h1 class="text-xl font-bold">Virtual Store</h1>
+      <button class="md:hidden focus:outline-none" aria-label="Toggle navigation">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mt-4 md:mt-0">
+      <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+        <li><a href="/" class="hover:underline">Home</a></li>
+        <li><a href="/products" class="hover:underline">Products</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
