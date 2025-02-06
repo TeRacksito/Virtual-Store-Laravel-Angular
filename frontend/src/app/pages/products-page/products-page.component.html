@@ -13,8 +13,8 @@
   </div>
   <div class="mt-6 flex justify-center">
     <button (click)="previousPage()" [disabled]="!pagination.prev_page_url"
-      class="px-4 py-2 bg-gray-300 rounded mr-2">Previous</button>
+      class="px-4 py-2 bg-gray-300 rounded mr-2 cursor-pointer">Previous</button>
     <button (click)="nextPage()" [disabled]="!pagination.next_page_url"
-      class="px-4 py-2 bg-gray-300 rounded">Next</button>
+      class="px-4 py-2 bg-gray-300 rounded cursor-pointer">Next</button>
   </div>
 </app-full-layout>
