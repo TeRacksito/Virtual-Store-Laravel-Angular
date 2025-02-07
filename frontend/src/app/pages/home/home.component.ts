@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FullLayoutComponent } from '../../components/Layouts/full-layout/full-layout.component';
+import { FullLayoutComponent } from '../../Layouts/components/full-layout/full-layout.component';
 
 @Component({
   selector: 'app-home',

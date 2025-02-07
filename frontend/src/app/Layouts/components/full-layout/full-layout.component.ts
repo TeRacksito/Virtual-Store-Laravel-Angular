@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../Header/header.component';
-import { FooterComponent } from '../../Footer/footer.component';
+import { FooterComponent } from '../footer/footer.component';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-full-layout',
